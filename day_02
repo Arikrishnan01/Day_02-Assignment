@@ -1,0 +1,125 @@
+1. Write a blog on the Difference between document and window object
+
+Answer:
+      Window:
+            => Object represent the current browser.
+            => Provide an access to all the broswer API,DOM and console and js runtime.
+            => DOM that is help to maniplute the the HTML and CSS of web page.
+      Object:
+            => Object present inside the window.
+            => Access the element in the HTML page.
+            => We can add dynamic content to our web page.
+            
+2.Codekata:
+
+1.You will be provided with a number. Print the number of days in the month corresponding to that number.
+
+Answer:
+
+// Getting input via STDIN
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+
+inp.on("close", () => {
+  //start-here
+  //Your code goes here … replace the below line with your code logic 
+
+    let line=userInput[0];
+    if(line==0 || line>=12)
+    {
+        console.log("Error");
+    }
+    else if(line==2)
+    {
+        console.log("28");
+    }
+    else
+    {
+        console.log("31");
+    }
+
+  //end-here
+});
+
+Input :
+8
+Output :
+31
+
+2. You are provided with a number "N", Find the Nth term of the series: 1, 4, 9, 16, 25, 36, 49, 64, 81, .......
+
+Answer:
+
+// Getting input via STDIN
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+
+inp.on("close", () => {
+  //start-here
+  //Your code goes here … replace the below line with your code logic 
+
+  let num=userInput[0];
+  if(num==0)
+  {
+      console.log("0");
+  }
+  else if(num<0)
+  {
+      console.log("Error");
+  }
+  else
+  {
+      console.log(num*num);
+  }
+
+  //end-here
+});
+
+Input :
+18
+Output :
+324
+
+3. You are given A = Length of a rectangle & B = breadth of a rectangle. Find its area “C”.
+
+Answer:
+
+const readline =require("readline");
+const inp =readline.createInterface({
+    input: process.stdin
+});
+const userInput=[];
+inp.on("line",(data) =>{
+    userInput.push(data);
+});
+inp.on("close", () =>{
+    let number_1=userInput[0];
+    let number_2=userInput[1];
+    let number_3=number_1*number_2;
+    console.log(number_3);
+    
+});
+
+Input :
+2
+3
+Output :
+6
